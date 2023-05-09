@@ -5,7 +5,7 @@
 ## Description
 
 Project aims to create a Stock App which requires user login and you can follow your sales, purchases, products and business partners of your company.
-You can use below information to login;
+You can use account information below to login;
 ```
 email: admin@gmail.com
 password: Abcd1234*
