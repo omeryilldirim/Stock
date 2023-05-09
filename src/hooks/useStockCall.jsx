@@ -8,12 +8,8 @@ const useStockCall = () => {
   const {axiosWithToken} = useAxios()
 
   const getStockData = async (url) => {
-    // const BASE_URL = "https://12253.fullstack.clarusway.com/";
     dispatch(fetchStart());
     try {
-      // const { data } = await axios(`${BASE_URL}stock/${url}/`, {
-      //   headers: { Authorization: `Token ${token}` },
-      // });
       const {data} = await axiosWithToken(`stock/${url}/`)
       dispatch(getSuccess({ data, url }));
     } catch (error) {
@@ -23,12 +19,9 @@ const useStockCall = () => {
   };
 
   const deleteStockData = async (url, id) => {
-    // const BASE_URL = "https://12253.fullstack.clarusway.com/"
+    
     dispatch(fetchStart())
     try {
-      // await axios.delete(`${BASE_URL}stock/${url}/${id}/`, {
-      //   headers: { Authorization: `Token ${token}` },
-      // })
       await axiosWithToken.delete(`stock/${url}/${id}/`)
       toastSuccessNotify(`Item successfuly deleted from ${url}`)
       getStockData(url)
@@ -39,12 +32,8 @@ const useStockCall = () => {
   }
 
   const postStockData = async (url, info) => {
-    // const BASE_URL = "https://12253.fullstack.clarusway.com/"
     dispatch(fetchStart())
     try {
-      // await axios.delete(`${BASE_URL}stock/${url}/${id}/`, {
-      //   headers: { Authorization: `Token ${token}` },
-      // })
       await axiosWithToken.post(`stock/${url}/`, info)
       toastSuccessNotify(`${url} succesfully posted`)
       getStockData(url)
@@ -55,12 +44,8 @@ const useStockCall = () => {
   }
 
   const putStockData = async (url, info) => {
-    // const BASE_URL = "https://12253.fullstack.clarusway.com/"
     dispatch(fetchStart())
     try {
-      // await axios.delete(`${BASE_URL}stock/${url}/${id}/`, {
-      //   headers: { Authorization: `Token ${token}` },
-      // })
       await axiosWithToken.put(`stock/${url}/${info.id}/`, info)
       toastSuccessNotify(`${url} succesfully updated`)
       getStockData(url)
@@ -71,7 +56,6 @@ const useStockCall = () => {
   }
 
   const getProCatBrand = async () => {
-    // const BASE_URL = "https://12253.fullstack.clarusway.com/"
     dispatch(fetchStart())
     try {
       const [products,categories, brands] = await Promise.all([

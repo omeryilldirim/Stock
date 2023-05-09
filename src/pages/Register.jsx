@@ -26,7 +26,7 @@ const Register = () => {
         }}
       >
         <Grid item xs={12}>
-          <Typography variant="h3" color="primary" align="center">
+          <Typography variant="h3" color="primary" align="center" mt={3}>
             STOCK APP
           </Typography>
         </Grid>

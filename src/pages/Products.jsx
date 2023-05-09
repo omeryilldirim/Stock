@@ -81,12 +81,7 @@ const Products = () => {
   ];
 
   useEffect(() => {
-    // getStockData("products");
-    // getStockData("categories");
-    // getStockData("brands");
     getProCatBrand();
-
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -49,7 +49,7 @@ function Dashboard(props) {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar>
+        <Toolbar sx={{backgroundColor:'maroon'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -59,7 +59,7 @@ function Dashboard(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h5" noWrap component="div" sx={{ flexGrow: 1 }}>
             Stock App
           </Typography>
           {currentUser && (
