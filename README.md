@@ -11,6 +11,10 @@ email: admin@gmail.com
 password: Abcd1234*
 ```
 
+## Outcome
+
+![Project Snapshot](./src/assets/stock-app.gif)
+
 ## Project Skeleton
 
 ```
@@ -76,11 +80,6 @@ password: Abcd1234*
 ├── tailwind.config.js
 └── yarn.lock
 ```
-
-## Outcome
-
-![Project Snapshot](./src/assets/stock-app.gif)
-
 
 ### Following topics are covered;
 
