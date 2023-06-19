@@ -11,6 +11,9 @@ email: admin@gmail.com
 password: Abcd1234*
 ```
 
+### Following topics are covered;
+
+- ReactJS, Redux, Redux Toolkit, Redux Persist, Axios, Material UI, Formik, Yup, Toastify, Emotion/react, Tremor/react
 ## Outcome
 
 ![Project Snapshot](./src/assets/stock-app.gif)
@@ -80,10 +83,5 @@ password: Abcd1234*
 ├── tailwind.config.js
 └── yarn.lock
 ```
-
-### Following topics are covered;
-
-- ReactJS, Redux, Redux Toolkit, Redux Persist, Axios, Material UI, Formik, Yup, Toastify, Emotion/react, Tremor/react
-
 
 **<p align="center">&#9786; Happy Coding &#9997; - Please feel free to check ! 🙃 </p>**
