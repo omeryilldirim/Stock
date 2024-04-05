@@ -13,8 +13,7 @@ const useAuthCall = () => {
 
     dispatch(fetchStart())
     try {
-        // const {data} = await axios.post(`${BASE_URL}account/auth/login/`, userInfo)
-        const data = { user: { username: "admin", is_superuser: true}, key: "asdaksjalfjh12h213h" }
+        const {data} = await axios.post(`${BASE_URL}account/auth/login/`, userInfo)
         dispatch(loginSuccess(data))
         toastSuccessNotify("Login performed")
         navigate("/stock")
